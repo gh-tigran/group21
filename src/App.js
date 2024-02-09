@@ -35,6 +35,14 @@ function App(props) {
           }}
         />
         <Tab.Screen
+          name="ProductsNavigation"
+          component={SettingsNavigation}
+          options={{
+            title: "Products",
+            headerShown: false,
+          }}
+        />
+        <Tab.Screen
           name="AccountNavigation"
           component={AccountNavigation}
           options={{
