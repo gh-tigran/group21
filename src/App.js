@@ -12,8 +12,6 @@ const Tab = createBottomTabNavigator();
 
 function App(props) {
   useEffect(() => {
-      ////
-
     SplashScreen.hide();
   }, []);
   return (
@@ -25,7 +23,7 @@ function App(props) {
           options={{
             title: "Home",
             headerShown: false,
-            // tabBarIcon: (p) => <HomeSvg fill={p.color} widht={20} height={20} />,
+            tabBarIcon: (p) => <HomeSvg fill={p.color} widht={20} height={20} />,
           }}
         />
         <Tab.Screen
